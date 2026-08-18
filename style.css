@@ -201,7 +201,7 @@ h2.animate-title {
     font-size: 64px;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 .desc {
     font-size: 22px;
@@ -242,8 +242,8 @@ h2.animate-title {
 }
 
 .mt-4 { margin-top: 16px; }
-.mt-6 { margin-top: 32px; }
-.mt-8 { margin-top: 48px; }
+.mt-6 { margin-top: 24px; }
+.mt-8 { margin-top: 32px; }
 .mb-4 { margin-bottom: 16px; }
 
 /* === SLIDE SPECIFIC STYLES === */
@@ -381,10 +381,10 @@ h2.animate-title {
     line-height: 1.6;
 }
 .principle-box {
-    padding: 32px 48px;
+    padding: 24px 32px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
 }
 .principle-header {
     font-size: 12px;
@@ -480,15 +480,15 @@ h2.animate-title {
     display: flex;
     gap: 40px;
 }
-.split-left { flex: 1; display: flex; flex-direction: column; gap: 32px; }
+.split-left { flex: 1; display: flex; flex-direction: column; gap: 24px; }
 .split-right { flex: 1; }
 .split-header { font-size: 14px; letter-spacing: 2px; color: var(--text-secondary); }
-.split-list { display: flex; flex-direction: column; gap: 24px; }
+.split-list { display: flex; flex-direction: column; gap: 16px; }
 .split-item {
     display: flex;
     gap: 24px;
     align-items: center;
-    padding-bottom: 24px;
+    padding-bottom: 16px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .split-big { font-size: 48px; font-weight: 700; color: var(--accent-neon); width: 120px; }
@@ -497,7 +497,7 @@ h2.animate-title {
 .cards-2x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 24px;
 }
 
 /* Specialist (Slide 7) */
