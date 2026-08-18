@@ -299,8 +299,9 @@ function resetAnimations(slide) {
     const staggers = slide.querySelectorAll('.animate-stagger > *');
     const fades = slide.querySelectorAll('.animate-fade-in');
 
-    gsap.set([titles, texts, fades], { opacity: 0, y: 30 });
-    gsap.set(staggers, { opacity: 0, y: 30, scale: 0.95 });
+    const elements = [...titles, ...texts, ...fades];
+    if(elements.length) gsap.set(elements, { opacity: 0, y: 30 });
+    if(staggers.length) gsap.set(staggers, { opacity: 0, y: 30, scale: 0.95 });
 }
 
 function animateSlide(slide) {
