@@ -109,7 +109,7 @@ body::after {
 .slide-content {
     width: 100%;
     height: 100%;
-    padding: 80px 120px;
+    padding: 60px 80px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -119,7 +119,7 @@ body::after {
 .header {
     display: flex;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     gap: 24px;
 }
 .logo {
@@ -161,9 +161,9 @@ body::after {
 /* Footer */
 .slide-footer {
     position: absolute;
-    bottom: 60px;
-    left: 120px;
-    right: 120px;
+    bottom: 40px;
+    left: 80px;
+    right: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -207,7 +207,7 @@ h2.animate-title {
     color: var(--text-secondary);
     line-height: 1.6;
     max-width: 1000px;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
 }
 .dot {
     display: inline-block;
@@ -251,7 +251,7 @@ h2.animate-title {
 .main-grid {
     display: flex;
     flex: 1;
-    gap: 80px;
+    gap: 40px;
     align-items: center;
 }
 .left-col {
@@ -353,7 +353,7 @@ h2.animate-title {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 .card {
     padding: 40px 32px;
@@ -477,7 +477,7 @@ h2.animate-title {
 /* Split Content (Slide 6) */
 .split-content-wrapper {
     display: flex;
-    gap: 80px;
+    gap: 40px;
 }
 .split-left { flex: 1; display: flex; flex-direction: column; gap: 32px; }
 .split-right { flex: 1; }
@@ -559,7 +559,7 @@ h2.animate-title {
     background: var(--bg-glass);
     border: 1px solid var(--border-glass);
     border-radius: 32px;
-    padding: 64px;
+    padding: 40px;
     display: flex; flex-direction: column;
 }
 .p-header { font-size: 14px; letter-spacing: 2px; color: var(--text-secondary); margin-bottom: 24px; }
@@ -567,7 +567,7 @@ h2.animate-title {
 .p-list { list-style: none; flex: 1; }
 .p-list li {
     display: flex; justify-content: space-between; align-items: center;
-    padding: 24px 0;
+    padding: 16px 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     font-size: 18px;
 }
@@ -588,7 +588,7 @@ h2.animate-title {
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
-.phase-card { padding: 48px 32px; }
+.phase-card { padding: 32px 24px; }
 .phase-card h4 { font-size: 16px; letter-spacing: 1px; margin-bottom: 16px; }
 .phase-card h3 { font-size: 28px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 24px; }
 .phase-list { list-style: none; margin-top: 24px; }
@@ -598,8 +598,8 @@ h2.animate-title {
     align-items: center;
     gap: 40px;
 }
-.pb-left, .pb-right { padding: 40px; flex: 1; }
-.pb-text { font-size: 28px; line-height: 1.4; font-weight: 500; }
+.pb-left, .pb-right { padding: 24px; flex: 1; }
+.pb-text { font-size: 24px; line-height: 1.4; font-weight: 500; }
 .pb-right p { font-size: 18px; line-height: 1.6; color: var(--text-secondary); }
 .dc-circle {
     width: 160px; height: 160px;
