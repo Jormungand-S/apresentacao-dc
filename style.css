@@ -359,7 +359,7 @@ h2.animate-title {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Move to the top */
     position: relative;
     height: 100%;
 }
@@ -369,7 +369,7 @@ h2.animate-title {
     height: 450px;
     border: 1px solid rgba(255,255,255,0.05);
     border-radius: 50%;
-    margin-top: -250px;
+    margin-top: 40px; /* Spacing from the very top */
 }
 .orbit-diagram::before {
     content: '';
