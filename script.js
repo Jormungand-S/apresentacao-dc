@@ -338,7 +338,7 @@ function updateScale() {
     const scaleY = windowHeight / targetHeight;
     const scale = Math.min(scaleX, scaleY);
     
-    container.style.transform = \`translate(-50%, -50%) scale(\${scale})\`;
+    container.style.transform = `translate(-50%, -50%) scale(${scale})`;
 }
 
 // Run
