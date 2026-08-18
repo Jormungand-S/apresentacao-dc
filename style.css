@@ -434,33 +434,31 @@ h2.animate-title {
 
 /* Timeline */
 .timeline-grid {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 60px;
+    margin-top: 64px;
 }
 .timeline-step {
-    flex: 1;
-    background: var(--bg-glass);
+    background: linear-gradient(135deg, rgba(22, 38, 38, 0.6) 0%, rgba(22, 38, 38, 0.2) 100%);
     border: 1px solid var(--border-glass);
-    border-radius: 20px;
-    padding: 32px 24px;
+    border-radius: 24px;
+    padding: 48px 40px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .step-num {
-    display: block;
-    font-size: 14px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
     color: var(--accent-neon);
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
-.timeline-step h4 { font-size: 18px; margin-bottom: 12px; }
-.timeline-step p { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
+.timeline-step h4 { font-size: 22px; margin-bottom: 16px; font-weight: 700; }
+.timeline-step p { font-size: 16px; color: var(--text-secondary); line-height: 1.6; }
 .timeline-arrow {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    color: var(--accent-neon);
-    font-size: 20px;
+    display: none;
 }
 
 /* Frentes Grid (Slide 4) */
