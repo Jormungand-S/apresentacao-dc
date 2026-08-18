@@ -365,8 +365,8 @@ h2.animate-title {
 }
 .orbit-diagram {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 450px;
+    height: 450px;
     border: 1px solid rgba(255,255,255,0.05);
     border-radius: 50%;
 }
@@ -404,8 +404,8 @@ h2.animate-title {
     background: var(--bg-panel);
     border: 1px solid var(--border-glass);
     border-radius: 20px;
-    padding: 24px;
-    width: 300px;
+    padding: 20px;
+    width: 260px;
     backdrop-filter: blur(5px);
     transition: all 0.4s ease;
     cursor: none;
@@ -416,12 +416,12 @@ h2.animate-title {
     border-color: var(--accent-neon);
     box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 20px rgba(72, 230, 164, 0.3);
 }
-.orbit-item h4 { font-size: 16px; margin-bottom: 8px; }
-.orbit-item p { font-size: 14px; color: var(--text-secondary); }
-.item-1 { top: 0; left: -100px; }
-.item-2 { top: 150px; right: -150px; }
-.item-3 { bottom: 50px; left: -100px; }
-.item-4 { bottom: 150px; right: -150px; }
+.orbit-item h4 { font-size: 15px; margin-bottom: 8px; }
+.orbit-item p { font-size: 13px; color: var(--text-secondary); }
+.item-1 { top: -20px; left: -80px; }
+.item-2 { top: 80px; right: -100px; }
+.item-3 { bottom: 0px; left: -80px; }
+.item-4 { bottom: 80px; right: -100px; }
 
 /* Swipe Hint */
 .swipe-hint {
@@ -429,8 +429,8 @@ h2.animate-title {
     align-items: center;
     gap: 16px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 20px;
+    right: 20px;
     background: rgba(0,0,0,0.4);
     padding: 16px 32px;
     border-radius: 40px;
