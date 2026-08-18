@@ -30,6 +30,11 @@ const slidesData = [
                     <p>Triagem + classificação + pipeline</p>
                 </div>
             </div>
+            <!-- Swipe Hint -->
+            <div class="swipe-hint animate-fade-in mt-8">
+                <span class="hint-text">Use as setas ou arraste para navegar</span>
+                <div class="hint-arrow">→</div>
+            </div>
         `,
         footerText: "DC Gestão & Performance • Confidencial"
     },
@@ -180,18 +185,18 @@ const slidesData = [
         leftTitle: "REFERÊNCIA DE CONTRATAÇÃO FRAGMENTADA",
         leftDesc: "Uma composição conservadora do mesmo escopo, contratado parte por parte, pode chegar a aproximadamente:",
         prices: [
-            { item: "Gestor de tráfego especializado", value: "R$ 1.500" },
-            { item: "Gestão de redes + planejamento + conteúdo", value: "R$ 1.200" },
-            { item: "Criação, captação e edição de vídeos", value: "R$ 1.500" },
-            { item: "CRM / Funil de Vendas Automatizado", value: "R$ 1.300" }
+            { item: "Gestor de tráfego especializado", value: "R$ <span class='counter' data-target='1500'>0</span>" },
+            { item: "Gestão de redes + planejamento + conteúdo", value: "R$ <span class='counter' data-target='1200'>0</span>" },
+            { item: "Criação, captação e edição de vídeos", value: "R$ <span class='counter' data-target='1500'>0</span>" },
+            { item: "CRM / Funil de Vendas Automatizado", value: "R$ <span class='counter' data-target='1300'>0</span>" }
         ],
-        totalFragmented: "≈ R$ 5.500 / mês",
+        totalFragmented: "≈ R$ <span class='counter text-yellow' data-target='5500'>0</span> / mês",
         rightTitle: "CONDIÇÃO DC GESTÃO & PERFORMANCE",
-        mainPrice: "R$ 3.500 <span class='text-sm'>/ mês</span>",
+        mainPrice: "R$ <span class='counter' data-target='3500'>0</span> <span class='text-sm'>/ mês</span>",
         mainPriceDesc: "Tudo conectado em uma única estratégia, com integração entre mídia, conteúdo, automação e comercial.",
         savingBlocks: [
-            { big: "R$ 2.000", desc: "de diferença mensal frente à referência fragmentada." },
-            { big: "≈ 36%", desc: "de redução comparativa, sem abrir mão das quatro frentes." }
+            { big: "R$ <span class='counter text-neon' data-target='2000'>0</span>", desc: "de diferença mensal frente à referência fragmentada." },
+            { big: "≈ <span class='counter text-neon' data-target='36'>0</span>%", desc: "de redução comparativa, sem abrir mão das quatro frentes." }
         ],
         footerText: "DC Gestão & Performance • Investimento"
     },

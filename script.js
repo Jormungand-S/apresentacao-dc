@@ -281,6 +281,9 @@ function initSwiper() {
             init: function () {
                 animateSlide(this.slides[this.activeIndex]);
             },
+            progress: function (swiper, progress) {
+                gsap.to('.progress-fill', { scaleX: progress, duration: 0.3, ease: 'power2.out' });
+            },
             slideChangeTransitionStart: function () {
                 // Reset animations for all slides
                 this.slides.forEach(slide => {
@@ -298,10 +301,12 @@ function resetAnimations(slide) {
     const texts = slide.querySelectorAll('.animate-text');
     const staggers = slide.querySelectorAll('.animate-stagger > *');
     const fades = slide.querySelectorAll('.animate-fade-in');
+    const counters = slide.querySelectorAll('.counter');
 
     const elements = [...titles, ...texts, ...fades];
     if(elements.length) gsap.set(elements, { opacity: 0, y: 30 });
     if(staggers.length) gsap.set(staggers, { opacity: 0, y: 30, scale: 0.95 });
+    if(counters.length) counters.forEach(c => c.innerHTML = "0");
 }
 
 function animateSlide(slide) {
@@ -324,6 +329,25 @@ function animateSlide(slide) {
     if(fades.length) {
         tl.to(fades, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, 0.8);
     }
+
+    // Animate Counters
+    const counters = slide.querySelectorAll('.counter');
+    if(counters.length) {
+        counters.forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target') || "0", 10);
+            gsap.to(counter, {
+                innerHTML: target,
+                duration: 1.5,
+                ease: "power3.out",
+                snap: { innerHTML: 1 },
+                onUpdate: function() {
+                    // format with dot if > 999
+                    const val = Math.round(this.targets()[0].innerHTML);
+                    counter.innerHTML = val >= 1000 ? val.toLocaleString('pt-BR') : val;
+                }
+            });
+        });
+    }
 }
 
 // Scale perfectly to 1920x1080 maintaining aspect ratio
@@ -342,10 +366,26 @@ function updateScale() {
     container.style.transform = `translate(-50%, -50%) scale(${scale})`;
 }
 
+// Custom Cursor Initialization
+function initCursor() {
+    const cursor = document.querySelector('.cursor-glow');
+    if(!cursor) return;
+    
+    // QuickTo for smooth performance
+    const xTo = gsap.quickTo(cursor, "x", {duration: 0.1, ease: "power3"});
+    const yTo = gsap.quickTo(cursor, "y", {duration: 0.1, ease: "power3"});
+
+    window.addEventListener("mousemove", e => {
+        xTo(e.clientX);
+        yTo(e.clientY);
+    });
+}
+
 // Run
 document.addEventListener('DOMContentLoaded', () => {
     generateSlides();
     updateScale();
+    initCursor();
     window.addEventListener('resize', updateScale);
     
     // Initial reset before swiper kicks in
