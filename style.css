@@ -369,6 +369,7 @@ h2.animate-title {
     height: 450px;
     border: 1px solid rgba(255,255,255,0.05);
     border-radius: 50%;
+    margin-top: -120px;
 }
 .orbit-diagram::before {
     content: '';
