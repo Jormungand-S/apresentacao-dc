@@ -356,12 +356,14 @@ h2.animate-title {
 
 /* Orbit Diagram (Slide 1 right col) */
 .right-col {
-    flex: 1;
+    position: absolute;
+    top: -40px; /* Shift higher towards the header */
+    right: 0;
+    bottom: 0;
+    width: 50%;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Move to the top */
-    position: relative;
-    height: 100%;
+    align-items: flex-start;
 }
 .orbit-diagram {
     position: relative;
