@@ -60,8 +60,9 @@ const slidesData = [
     {
         id: 3, // Funil/CRM
         headerBadge: "O CORAÇÃO DA ESTRATÉGIA",
-        eyebrow: "01 • FUNIL DE ATENDIMENTO E QUALIFICAÇÃO",
-        title: "O lead entra. A automação qualifica. <span class='highlight'>O time recebe o que merece atenção.</span>",
+        eyebrow: "01 • OPERAÇÃO",
+        title: "FUNIL DE <span class='highlight'>ATENDIMENTO</span>",
+        desc: "O lead entra. A automação qualifica. O time recebe apenas o que merece atenção.",
         type: "timeline",
         timeline: [
             { num: "01", title: "Anúncio / Conteúdo", desc: "" },
