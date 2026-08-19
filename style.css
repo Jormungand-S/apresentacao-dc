@@ -22,7 +22,11 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #0a1114;
+    background-image: linear-gradient(rgba(10, 17, 20, 0.85), rgba(10, 17, 20, 0.85)), url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: var(--text-primary);
     font-family: var(--font-main);
     overflow: hidden; /* Important for scaled presentation */
