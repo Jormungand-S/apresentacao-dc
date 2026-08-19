@@ -241,7 +241,7 @@ function generateSlides() {
                         </ul>
                         <div class="p-total">
                             <span>Total estimado</span>
-                            <strong class="text-yellow">${slide.totalFragmented}</strong>
+                            <strong class="text-red">${slide.totalFragmented}</strong>
                         </div>
                     </div>
                     <div class="pricing-right animate-stagger">

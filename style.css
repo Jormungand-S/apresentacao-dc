@@ -242,8 +242,8 @@ body::after {
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
-.text-yellow {
-    color: #e6b848; /* For the fragmented price */
+.text-red {
+    color: #eb4034; /* For the fragmented price (expensive/bad) */
 }
 .font-bold {
     font-weight: 700;
@@ -681,7 +681,21 @@ h2.animate-title {
 }
     gap: 40px;
 }
-.pricing-left, .pricing-right { flex: 1; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 32px; padding: 40px; display: flex; flex-direction: column; }
+.pricing-left, .pricing-right { 
+    flex: 1; 
+    border-radius: 32px; 
+    padding: 40px; 
+    display: flex; 
+    flex-direction: column; 
+}
+.pricing-left {
+    background: linear-gradient(135deg, rgba(235, 64, 52, 0.08) 0%, rgba(235, 64, 52, 0.02) 100%);
+    border: 1px solid rgba(235, 64, 52, 0.2);
+}
+.pricing-right {
+    background: var(--bg-glass); 
+    border: 1px solid var(--border-glass); 
+}
 .p-header { font-size: 12px; letter-spacing: 2px; color: var(--text-secondary); margin-bottom: 16px; }
 .p-desc { font-size: 18px; color: var(--text-secondary); margin-bottom: 24px; }
 .p-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
