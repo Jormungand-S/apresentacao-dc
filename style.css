@@ -676,9 +676,6 @@ h2.animate-title {
 /* Pricing (Slide 9) */
 .pricing-wrapper {
     display: flex;
-    gap: 80px;
-    height: 100%;
-}
     gap: 40px;
 }
 .pricing-left, .pricing-right { 
