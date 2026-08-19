@@ -259,6 +259,15 @@ const slidesData = [
             title: "PRÓXIMO PASSO",
             content: "Validar o perfil de lead ideal e iniciar a implantação do CRM / Funil Automatizado, conteúdo e mídia em uma única operação."
         },
-        footerText: "DC Gestão & Performance • Rodrigo • Escritório de Advocacia"
+        footerText: "DC Gestão & Performance • Próximos Passos"
+    },
+    {
+        id: 11,
+        headerBadge: "FIM DA APRESENTAÇÃO",
+        eyebrow: "MUITO OBRIGADO",
+        title: "Obrigado pela <span class='highlight'>confiança e pelo tempo.</span>",
+        desc: "Estamos prontos para construir a sua operação comercial digital com estratégia, inteligência e performance.",
+        type: "thank-you",
+        footerText: "DC Gestão & Performance • Muito Obrigado"
     }
 ];

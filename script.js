@@ -300,6 +300,21 @@ function generateSlides() {
                     </div>
                 </div>
             `;
+        } else if (slide.type === 'thank-you') {
+            contentHTML += `
+                <div class="thank-you-wrapper animate-stagger" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; text-align: center; margin-top: 40px;">
+                    <div class="dc-circle" style="width: 140px; height: 140px; font-size: 40px; margin-bottom: 48px; border: 2px solid var(--accent-neon); box-shadow: 0 0 60px rgba(72, 230, 164, 0.3);">
+                        DC<br><span class="tiny" style="font-size: 10px; margin-top: 4px;">GESTÃO &<br>PERFORMANCE</span>
+                    </div>
+                    <h2 class="animate-title" style="font-size: 72px; max-width: 1100px; margin-bottom: 24px;">${slide.title}</h2>
+                    <p class="desc" style="max-width: 800px; font-size: 22px; margin: 0 auto;">${slide.desc}</p>
+                    
+                    <a href="https://wa.me/5511999999999" target="_blank" style="margin-top: 60px; padding: 20px 40px; background: var(--accent-neon); color: #000; border-radius: 40px; font-size: 20px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 12px; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(72, 230, 164, 0.3);">
+                        <span>Vamos começar?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+                </div>
+            `;
         }
 
         contentHTML += `</div>`; // Close content-wrapper
