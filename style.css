@@ -323,6 +323,7 @@ h2.animate-title {
 }
 .left-col {
     flex: 1;
+    margin-top: 100px; /* Pushes the text block down on the Y axis */
 }
 .left-col h1 {
     font-size: 80px;
