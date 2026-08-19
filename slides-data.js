@@ -78,7 +78,8 @@ const slidesData = [
         id: 4, // Social Media (using type specialist)
         headerBadge: "GESTÃO DE REDES SOCIAIS E CONTEÚDO",
         eyebrow: "02 • AUTORIDADE E COMUNICAÇÃO",
-        title: "Não é postar por postar. É construir <span class='highlight'>presença que vende confiança.</span>",
+        title: "Não é postar por postar. É construir <span class='text-neon'>presença que vende confiança.</span>",
+        titleButton: { text: "Ver portfólio", link: "https://spartansdesign.lovable.app/" },
         type: "specialist",
         specialistImage: "spartans.jpg",
         specialistName: "Spartan's Design",
