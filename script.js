@@ -23,9 +23,12 @@ function generateSlides() {
         
         // Body Content based on type
         contentHTML += `<div class="content-wrapper">`;
+        let textStyle = slide.id === 1 ? 'transform: translateY(120px);' : '';
+        contentHTML += `<div style="${textStyle}">`;
         if (slide.eyebrow) contentHTML += `<span class="eyebrow">${slide.eyebrow}</span>`;
         if (slide.title) contentHTML += `<h2 class="animate-title">${slide.title}</h2>`;
         if (slide.desc) contentHTML += `<p class="desc animate-text">${slide.desc}</p>`;
+        contentHTML += `</div>`;
 
         if (slide.type === 'intro') {
             contentHTML += `
