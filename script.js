@@ -76,6 +76,33 @@ function generateSlides() {
                     `).join('')}
                 </div>
             `;
+            if (slide.bottomLeftBox && slide.bottomRightBox) {
+                contentHTML += `
+                <div class="timeline-bottom-panels mt-8 animate-stagger">
+                    <div class="tl-panel left-panel glass">
+                        <div class="p-header"><span class="dot"></span> ${slide.bottomLeftBox.title}</div>
+                        <div class="tl-items">
+                            ${slide.bottomLeftBox.items.map(item => `
+                                <div class="tl-q-item">
+                                    <strong class="text-neon">${item.q}</strong>
+                                    <p>${item.a}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    <div class="tl-panel right-panel glass">
+                        <div class="p-header"><span class="dot"></span> ${slide.bottomRightBox.title}</div>
+                        <p class="mb-4">${slide.bottomRightBox.desc}</p>
+                        <div class="tl-pills">
+                            ${slide.bottomRightBox.pills.map(pill => `<span class="tl-pill">${pill}</span>`).join('')}
+                        </div>
+                        <div class="tl-result mt-4 p-4 glass-dark">
+                            ${slide.bottomRightBox.result}
+                        </div>
+                    </div>
+                </div>
+                `;
+            }
         } else if (slide.type === 'frentes-grid') {
              contentHTML += `
                 <div class="frentes-container animate-stagger">
@@ -102,6 +129,20 @@ function generateSlides() {
                     `).join('')}
                 </div>
             `;
+            if (slide.bottomLeft && slide.bottomRight) {
+                contentHTML += `
+                <div class="cards-6-bottom mt-8 animate-fade-in">
+                    <div class="c6-panel glass">
+                        <div class="p-header"><span class="dot"></span> ${slide.bottomLeft.title}</div>
+                        <p class="font-bold">${slide.bottomLeft.content}</p>
+                    </div>
+                    <div class="c6-panel glass">
+                        <div class="p-header"><span class="dot"></span> ${slide.bottomRight.title}</div>
+                        <p class="font-bold">${slide.bottomRight.content}</p>
+                    </div>
+                </div>
+                `;
+            }
         } else if (slide.type === 'split-content') {
             contentHTML += `
                 <div class="split-content-wrapper">
@@ -153,6 +194,17 @@ function generateSlides() {
                     </div>
                 </div>
             `;
+            if (slide.bottomBars) {
+                contentHTML += `
+                <div class="specialist-bottom mt-8 animate-stagger">
+                    ${slide.bottomBars.map(bar => `
+                        <div class="spec-bar glass w-full mb-2 p-4 text-center">
+                            ${bar}
+                        </div>
+                    `).join('')}
+                </div>
+                `;
+            }
         } else if (slide.type === 'funnel-metrics') {
             contentHTML += `
                 <div class="funnel-steps animate-stagger">
@@ -204,6 +256,18 @@ function generateSlides() {
                                 </div>
                             `).join('')}
                         </div>
+                        ${slide.includedItems ? `
+                        <div class="included-items-grid mt-6">
+                            ${slide.includedItems.map(item => `
+                                <div class="inc-pill glass">${item}</div>
+                            `).join('')}
+                        </div>
+                        ` : ''}
+                        ${slide.efficiencyNote ? `
+                        <div class="efficiency-note text-green mt-4 font-bold text-sm">
+                            ${slide.efficiencyNote}
+                        </div>
+                        ` : ''}
                     </div>
                 </div>
             `;

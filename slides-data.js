@@ -71,6 +71,20 @@ const slidesData = [
             { num: "05", title: "CRM / Funil", desc: "Registra respostas, classifica e atualiza o pipeline." },
             { num: "06", title: "Comercial / Diretoria", desc: "Recebe o lead com respostas, contexto e prioridade já definidos." }
         ],
+        bottomLeftBox: {
+            title: "PERGUNTAS DE QUALIFICAÇÃO",
+            items: [
+                { id: "Q1", q: "Qual é a principal necessidade?", a: "Identifica o tipo de demanda e aderência ao perfil que o escritório deseja captar." },
+                { id: "Q2", q: "Em que momento a demanda está?", a: "Ajuda a entender estágio, contexto e maturidade para atendimento." },
+                { id: "Q3", q: "Existe urgência, prazo ou condição-chave?", a: "Permite priorizar e eliminar contatos fora dos critérios definidos." }
+            ]
+        },
+        bottomRightBox: {
+            title: "O QUE ACONTECE AUTOMATICAMENTE",
+            desc: "O processo não depende de alguém copiar informações ou organizar manualmente cada contato. A automação faz o trabalho operacional e entrega contexto para a equipe.",
+            pills: ["Responde na hora", "Faz a triagem", "Registra respostas", "Classifica", "Atualiza status", "Encaminha"],
+            result: "<span class='highlight font-bold'>Resultado esperado:</span> menos contatos frios chegando ao humano, menor tempo operacional e mais velocidade para atender quem realmente possui aderência."
+        },
         footerText: "DC Gestão & Performance • Funil de Atendimento"
     },
     {
@@ -105,6 +119,14 @@ const slidesData = [
             { icon: "↻", title: "Reposts estratégicos", desc: "Seleção e adaptação de conteúdos relevantes para o posicionamento." },
             { icon: "▣", title: "Planejamento mensal", desc: "Organização de pauta, visual e calendário para transformar comunicação em rotina." }
         ],
+        bottomLeft: {
+            title: "DIREÇÃO EDITORIAL",
+            content: "Autoridade + clareza + confiança + chamada para ação."
+        },
+        bottomRight: {
+            title: "FOCO",
+            content: "O conteúdo precisa apoiar a captação — e não competir com ela."
+        },
         footerText: "DC Gestão & Performance • Gestão de Redes Sociais"
     },
     {
@@ -145,6 +167,10 @@ const slidesData = [
             { title: "+200", subtitle: "ESCRITÓRIOS ATENDIDOS", desc: "Experiência acumulada através da agência em campanhas para o segmento jurídico." },
             { title: "4 anos", subtitle: "FEDERAL INVEST", desc: "Experiência prática em marketing, aquisição, processo e leitura de resultado." },
             { title: "Google + Meta", subtitle: "ESPECIALIZAÇÃO", desc: "Estruturação de campanhas, testes, otimização e acompanhamento de performance." }
+        ],
+        bottomBars: [
+            "<span class='text-blue font-bold'>Agência reconhecida como Google Partner.</span> A gestão combina experiência de mídia com visão de processo: gerar o lead é só o começo; precisamos entender também o que acontece depois que ele entra.",
+            "<span class='text-green font-bold'>Método:</span> campanha → leitura de dados → teste de criativo/público/intenção → otimização → feedback do CRM / funil → melhoria da aquisição."
         ],
         footerText: "DC Gestão & Performance • Gestão de Tráfego"
     },
@@ -198,6 +224,8 @@ const slidesData = [
             { big: "R$ <span class='counter text-neon' data-target='2000'>0</span>", desc: "de diferença mensal frente à referência fragmentada." },
             { big: "≈ <span class='counter text-neon' data-target='36'>0</span>%", desc: "de redução comparativa, sem abrir mão das quatro frentes." }
         ],
+        includedItems: ["Redes sociais", "Vídeos", "Tráfego pago", "Automação comercial"],
+        efficiencyNote: "Mais eficiência: menos ruído entre fornecedores e mais velocidade na execução.",
         footerText: "DC Gestão & Performance • Investimento"
     },
     {

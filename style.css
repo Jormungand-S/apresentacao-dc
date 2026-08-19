@@ -718,3 +718,57 @@ h2.animate-title {
     font-size: 32px; font-weight: 800; text-align: center; line-height: 1.2;
 }
 .dc-circle .tiny { font-size: 12px; font-weight: 500; letter-spacing: 2px; }
+
+/* Timeline Bottom Panels (Slide 3) */
+.timeline-bottom-panels {
+    display: flex;
+    gap: 32px;
+}
+.tl-panel { flex: 1; padding: 24px; border-radius: 16px; }
+.left-panel { border-top: 4px solid var(--accent-neon); }
+.right-panel { border-top: 4px solid var(--text-secondary); }
+.tl-items { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.tl-q-item p { margin-top: 4px; color: var(--text-secondary); font-size: 14px; }
+.tl-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+.tl-pill {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+.tl-result { border-radius: 8px; font-size: 14px; line-height: 1.6; }
+.glass-dark { background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.05); }
+
+/* Cards 6 Bottom (Slide 5) */
+.cards-6-bottom {
+    display: flex;
+    gap: 32px;
+}
+.c6-panel { flex: 1; padding: 24px; border-radius: 16px; }
+.c6-panel p { font-size: 18px; line-height: 1.4; margin-top: 8px; }
+
+/* Specialist Bottom (Slide 7) */
+.specialist-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.spec-bar { border-radius: 12px; font-size: 16px; line-height: 1.6; }
+
+/* Pricing Extra (Slide 9) */
+.included-items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+.inc-pill {
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    background: rgba(255,255,255,0.03);
+}
+.efficiency-note { padding: 12px 16px; border-radius: 8px; background: rgba(0, 255, 170, 0.05); border-left: 3px solid var(--accent-neon); }
