@@ -26,8 +26,8 @@ function generateSlides() {
         let textStyle = slide.id === 1 ? 'transform: translateY(120px);' : '';
         contentHTML += `<div style="${textStyle}">`;
         if (slide.eyebrow) contentHTML += `<span class="eyebrow">${slide.eyebrow}</span>`;
-        if (slide.title) contentHTML += `<h2 class="animate-title expandable-text">${slide.title}</h2>`;
-        if (slide.desc) contentHTML += `<p class="desc animate-text expandable-text">${slide.desc}</p>`;
+        if (slide.title) contentHTML += `<h2 class="animate-title">${slide.title}</h2>`;
+        if (slide.desc) contentHTML += `<p class="desc animate-text">${slide.desc}</p>`;
         contentHTML += `</div>`;
 
         if (slide.type === 'intro') {
@@ -52,7 +52,7 @@ function generateSlides() {
             contentHTML += `
                 <div class="cards-grid animate-stagger">
                     ${slide.cards.map(card => `
-                        <div class="card glass expandable-text">
+                        <div class="card glass">
                             <div class="icon">${card.icon}</div>
                             <h4>${card.title}</h4>
                             <p>${card.desc}</p>
@@ -166,7 +166,7 @@ function generateSlides() {
                     <div class="split-right cards-2x2 animate-stagger">
                         ${slide.rightCards.map(card => `
                             <div class="card glass">
-                                <div class="icon text-neon">${card.icon}</div>
+                                <div class="icon" style="color: var(--accent-neon);">${card.icon}</div>
                                 <h4>${card.title}</h4>
                                 <p>${card.desc}</p>
                             </div>
@@ -513,6 +513,12 @@ function initTextModals() {
         if (e.target === modalOverlay) closeModal();
     });
     closeBtn.addEventListener('click', closeModal);
+    
+    // Automatically make main text elements expandable
+    const textElements = document.querySelectorAll('.desc, .card, .split-text, .tl-panel, .principle-box p, .phase-card, .pricing-left p, .pb-text');
+    textElements.forEach(el => {
+        el.classList.add('expandable-text');
+    });
     
     document.querySelectorAll('.expandable-text').forEach(el => {
         el.addEventListener('click', (e) => {

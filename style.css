@@ -798,7 +798,6 @@ h2.animate-title {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: inline-block;
 }
 .expandable-text::after {
     content: '🔍';
