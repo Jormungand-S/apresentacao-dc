@@ -538,3 +538,47 @@ function initTextModals() {
         });
     });
 }
+
+// Mobile Detection & Rotate Logic
+let userChoseToContinueOnMobile = false;
+
+function checkMobileState() {
+    const warningOverlay = document.getElementById('mobile-warning-overlay');
+    const rotateOverlay = document.getElementById('mobile-rotate-overlay');
+    
+    // Check if device is small screen
+    const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+        if (!userChoseToContinueOnMobile) {
+            warningOverlay.style.display = 'flex';
+            rotateOverlay.style.display = 'none';
+        } else {
+            warningOverlay.style.display = 'none';
+            // Check orientation (if height > width, it's portrait)
+            if (window.innerHeight > window.innerWidth) {
+                rotateOverlay.style.display = 'flex';
+            } else {
+                rotateOverlay.style.display = 'none';
+            }
+        }
+    } else {
+        warningOverlay.style.display = 'none';
+        rotateOverlay.style.display = 'none';
+    }
+}
+
+window.addEventListener('resize', checkMobileState);
+window.addEventListener('orientationchange', checkMobileState);
+
+document.addEventListener('DOMContentLoaded', () => {
+    checkMobileState();
+    
+    const btnContinue = document.getElementById('btn-continue-mobile');
+    if (btnContinue) {
+        btnContinue.addEventListener('click', () => {
+            userChoseToContinueOnMobile = true;
+            checkMobileState();
+        });
+    }
+});

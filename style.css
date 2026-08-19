@@ -878,3 +878,37 @@ h2.animate-title {
 #text-modal-content .highlight, #text-modal-content .text-neon {
     font-size: 32px;
 }
+
+/* Mobile Overlays */
+.mobile-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    background: #0a1114;
+    z-index: 20000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+.mobile-overlay-content {
+    padding: 40px;
+    text-align: center;
+    max-width: 90%;
+}
+.mobile-overlay-content h3 { font-size: 24px; margin-bottom: 16px; color: var(--accent-neon); }
+.mobile-overlay-content p { font-size: 16px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px; }
+.mobile-btn {
+    background: linear-gradient(90deg, var(--accent-neon), var(--accent-cyan));
+    color: #000;
+    font-weight: bold;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .cursor-glow { display: none !important; }
+}
