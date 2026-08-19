@@ -23,7 +23,7 @@
 
 body {
     background-color: #0a1114;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)), url('bg.png');
+    background-image: linear-gradient(rgba(10, 15, 20, 0.70), rgba(10, 15, 20, 0.80)), url('bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -536,7 +536,7 @@ h2.animate-title {
     color: var(--accent-neon);
     margin-bottom: 12px;
 }
-.timeline-step h4 { font-size: 20px; margin-bottom: 8px; font-weight: 700; }
+.timeline-step h4 { font-size: 28px; margin-bottom: 8px; font-weight: 700; }
 .timeline-step p { font-size: 14px; color: var(--text-secondary); line-height: 1.5; }
 .timeline-arrow {
     display: none;
@@ -691,8 +691,8 @@ h2.animate-title {
     flex-direction: column; 
 }
 .pricing-left {
-    background: linear-gradient(135deg, rgba(235, 64, 52, 0.08) 0%, rgba(235, 64, 52, 0.02) 100%);
-    border: 1px solid rgba(235, 64, 52, 0.2);
+    background: linear-gradient(135deg, rgba(235, 64, 52, 0.15) 0%, rgba(235, 64, 52, 0.05) 100%);
+    border: 1px solid rgba(235, 64, 52, 0.5);
 }
 .pricing-right {
     background: var(--bg-glass); 

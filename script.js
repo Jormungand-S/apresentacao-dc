@@ -273,6 +273,11 @@ function generateSlides() {
                         ` : ''}
                     </div>
                 </div>
+                ${slide.footerThankYou ? `
+                <div class="thank-you-box glass mt-8 animate-fade-in text-center p-6" style="border: 1px solid var(--accent-neon);">
+                    <h3 class="font-bold text-xl">${slide.footerThankYou}</h3>
+                </div>
+                ` : ''}
             `;
         } else if (slide.type === 'phases') {
             contentHTML += `

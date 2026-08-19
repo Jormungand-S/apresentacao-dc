@@ -7,7 +7,7 @@ const slidesData = [
         type: "intro",
         footerInfo: [
             { label: "PROPOSTA PARA", value: "Rodrigo" },
-            { label: "SEGMENTO", value: "Escritório de Advocacia" },
+            { label: "SEGMENTO", value: "Freitas e Souza Advogados" },
             { label: "CONDUÇÃO", value: "DC Gestão & Performance" }
         ],
         rightContent: `
@@ -64,27 +64,13 @@ const slidesData = [
         title: "O lead entra. A automação qualifica. <span class='highlight'>O time recebe o que merece atenção.</span>",
         type: "timeline",
         timeline: [
-            { num: "01", title: "Anúncio / Conteúdo", desc: "Descoberta, autoridade e geração de demanda." },
-            { num: "02", title: "CTA \"Fale Conosco\"", desc: "Converte interesse em intenção de contato." },
-            { num: "03", title: "WhatsApp automático", desc: "Resposta imediata e início da triagem sem depender da equipe." },
-            { num: "04", title: "3 perguntas estratégicas", desc: "A automação identifica perfil, momento e prioridade." },
-            { num: "05", title: "CRM / Funil", desc: "Registra respostas, classifica e atualiza o pipeline." },
-            { num: "06", title: "Comercial / Diretoria", desc: "Recebe o lead com respostas, contexto e prioridade já definidos." }
+            { num: "01", title: "Anúncio / Conteúdo", desc: "" },
+            { num: "02", title: "CTA \"Fale Conosco\"", desc: "" },
+            { num: "03", title: "WhatsApp Automático", desc: "" },
+            { num: "04", title: "Três Perguntas Lógicas", desc: "" },
+            { num: "05", title: "Funil de Vendas", desc: "" },
+            { num: "06", title: "Conversar com a Diretoria", desc: "" }
         ],
-        bottomLeftBox: {
-            title: "PERGUNTAS DE QUALIFICAÇÃO",
-            items: [
-                { id: "Q1", q: "Qual é a principal necessidade?", a: "Identifica o tipo de demanda e aderência ao perfil que o escritório deseja captar." },
-                { id: "Q2", q: "Em que momento a demanda está?", a: "Ajuda a entender estágio, contexto e maturidade para atendimento." },
-                { id: "Q3", q: "Existe urgência, prazo ou condição-chave?", a: "Permite priorizar e eliminar contatos fora dos critérios definidos." }
-            ]
-        },
-        bottomRightBox: {
-            title: "O QUE ACONTECE AUTOMATICAMENTE",
-            desc: "O processo não depende de alguém copiar informações ou organizar manualmente cada contato. A automação faz o trabalho operacional e entrega contexto para a equipe.",
-            pills: ["Responde na hora", "Faz a triagem", "Registra respostas", "Classifica", "Atualiza status", "Encaminha"],
-            result: "<span class='highlight font-bold'>Resultado esperado:</span> menos contatos frios chegando ao humano, menor tempo operacional e mais velocidade para atender quem realmente possui aderência."
-        },
         footerText: "DC Gestão & Performance • Funil de Atendimento"
     },
     {
@@ -156,6 +142,7 @@ const slidesData = [
         ],
         includedItems: ["Redes sociais", "Vídeos", "Tráfego pago", "Automação comercial"],
         efficiencyNote: "Mais eficiência: menos ruído entre fornecedores e mais velocidade na execução.",
+        footerThankYou: "Muito obrigado pela confiança e pelo tempo! Estamos prontos para iniciar.",
         footerText: "DC Gestão & Performance • Proposta de Valor"
     }
 ];
