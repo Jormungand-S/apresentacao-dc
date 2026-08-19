@@ -131,7 +131,7 @@ function generateSlides() {
             `;
             if (slide.bottomLeft && slide.bottomRight) {
                 contentHTML += `
-                <div class="cards-6-bottom mt-8 animate-fade-in">
+                <div class="cards-6-bottom mt-4 animate-fade-in">
                     <div class="c6-panel glass">
                         <div class="p-header"><span class="dot"></span> ${slide.bottomLeft.title}</div>
                         <p class="font-bold">${slide.bottomLeft.content}</p>
