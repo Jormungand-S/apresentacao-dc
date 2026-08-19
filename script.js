@@ -28,9 +28,9 @@ function generateSlides() {
         if (slide.eyebrow) contentHTML += `<span class="eyebrow">${slide.eyebrow}</span>`;
         if (slide.title) {
             contentHTML += `
-                <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; margin-bottom: 24px;">
-                    <h2 class="animate-title" style="margin-bottom: 0;">${slide.title}</h2>
-                    ${slide.titleButton ? `<a href="${slide.titleButton.link}" target="_blank" class="mobile-btn" style="text-decoration: none; font-size: 14px; padding: 12px 24px; white-space: nowrap;">${slide.titleButton.text}</a>` : ''}
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; margin-bottom: 24px; width: 100%;">
+                    <h2 class="animate-title" style="margin-bottom: 0; flex: 1;">${slide.title}</h2>
+                    ${slide.titleButton ? `<a href="${slide.titleButton.link}" target="_blank" class="mobile-btn" style="text-decoration: none; font-size: 20px; padding: 18px 40px; border-radius: 12px; white-space: nowrap; flex-shrink: 0; box-shadow: 0 10px 30px rgba(72, 230, 164, 0.3); transform: scale(1); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">${slide.titleButton.text}</a>` : ''}
                 </div>
             `;
         }
