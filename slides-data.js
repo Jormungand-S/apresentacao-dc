@@ -12,7 +12,7 @@ const slidesData = [
         ],
         rightContent: `
             <div class="orbit-diagram">
-                <div class="center-node"><img src="logo-dark.png" style="width: 80%; height: 80%; object-fit: contain;"></div>
+                <div class="center-node"><img src="logo-light.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;"></div>
                 <div class="orbit-item item-1">
                     <h4>COMUNICAÇÃO</h4>
                     <p>Autoridade + confiança</p>
