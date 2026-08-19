@@ -93,7 +93,7 @@ const slidesData = [
         eyebrow: "02 • AUTORIDADE E COMUNICAÇÃO",
         title: "Não é postar por postar. É construir <span class='highlight'>presença que vende confiança.</span>",
         type: "specialist",
-        specialistImage: "spartans.png",
+        specialistImage: "spartans.jpg",
         specialistName: "Spartan's Design",
         specialistRole: "Design, Conteúdo & Direção Editorial",
         specialistDesc: "Responsáveis por posicionamento, planejamento editorial, criação de artes, redação e captação da biblioteca de vídeos. A gestão de conteúdo será conectada aos temas comerciais e campanhas do escritório.",
