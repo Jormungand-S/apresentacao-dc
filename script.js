@@ -181,7 +181,7 @@ function generateSlides() {
             contentHTML += `
                 <div class="specialist-wrapper">
                     <div class="spec-left glass animate-fade-in">
-                        <div class="spec-avatar">LF</div>
+                        <div class="spec-avatar" ${slide.specialistImage ? `style="background-image: url('${slide.specialistImage}'); background-size: cover; background-position: center; border: 2px solid var(--accent-neon); text-indent: -9999px; overflow: hidden;"` : ''}>LF</div>
                         <h3 class="spec-name">${slide.specialistName}</h3>
                         <p class="spec-role text-neon">${slide.specialistRole}</p>
                         <p class="spec-desc mt-6">${slide.specialistDesc}</p>
