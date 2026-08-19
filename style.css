@@ -112,7 +112,7 @@ body::after {
     height: 1080px;
     transform-origin: center center;
     /* transform handled by JS */
-    background: var(--bg-dark);
+    background: transparent;
     box-shadow: 0 0 100px rgba(0,0,0,0.8);
     overflow: hidden;
 }
@@ -126,7 +126,7 @@ body::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-dark); /* FIX: Prevents overlapping text visibility */
+    background-color: transparent;
 }
 .swiper-button-next, .swiper-button-prev {
     color: var(--text-primary);

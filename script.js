@@ -339,9 +339,11 @@ function initSwiper() {
             prev: {
                 shadow: true,
                 translate: ['-20%', 0, -1],
+                opacity: 0,
             },
             next: {
                 translate: ['100%', 0, 0],
+                opacity: 0,
             },
         },
         speed: 800,
