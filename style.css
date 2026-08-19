@@ -23,7 +23,7 @@
 
 body {
     background-color: #0a1114;
-    background-image: linear-gradient(rgba(10, 17, 20, 0.85), rgba(10, 17, 20, 0.85)), url('bg.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url('bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
