@@ -26,8 +26,8 @@ function generateSlides() {
         let textStyle = slide.id === 1 ? 'transform: translateY(120px);' : '';
         contentHTML += `<div style="${textStyle}">`;
         if (slide.eyebrow) contentHTML += `<span class="eyebrow">${slide.eyebrow}</span>`;
-        if (slide.title) contentHTML += `<h2 class="animate-title">${slide.title}</h2>`;
-        if (slide.desc) contentHTML += `<p class="desc animate-text">${slide.desc}</p>`;
+        if (slide.title) contentHTML += `<h2 class="animate-title expandable-text">${slide.title}</h2>`;
+        if (slide.desc) contentHTML += `<p class="desc animate-text expandable-text">${slide.desc}</p>`;
         contentHTML += `</div>`;
 
         if (slide.type === 'intro') {
@@ -52,7 +52,7 @@ function generateSlides() {
             contentHTML += `
                 <div class="cards-grid animate-stagger">
                     ${slide.cards.map(card => `
-                        <div class="card glass">
+                        <div class="card glass expandable-text">
                             <div class="icon">${card.icon}</div>
                             <h4>${card.title}</h4>
                             <p>${card.desc}</p>
@@ -478,5 +478,52 @@ document.addEventListener('DOMContentLoaded', () => {
     // Slight delay to ensure DOM is ready
     setTimeout(() => {
         initSwiper();
+        initTextModals();
     }, 100);
 });
+
+// Text Modals Logic
+function initTextModals() {
+    const modalOverlay = document.createElement('div');
+    modalOverlay.id = 'text-modal-overlay';
+    
+    const modalBox = document.createElement('div');
+    modalBox.id = 'text-modal-box';
+    
+    const modalContent = document.createElement('div');
+    modalContent.id = 'text-modal-content';
+    
+    const closeBtn = document.createElement('div');
+    closeBtn.id = 'text-modal-close';
+    closeBtn.innerHTML = '&times;';
+    
+    modalBox.appendChild(closeBtn);
+    modalBox.appendChild(modalContent);
+    modalOverlay.appendChild(modalBox);
+    document.body.appendChild(modalOverlay);
+    
+    const closeModal = () => {
+        modalOverlay.classList.remove('active');
+        setTimeout(() => {
+            modalContent.innerHTML = '';
+        }, 400);
+    };
+    
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) closeModal();
+    });
+    closeBtn.addEventListener('click', closeModal);
+    
+    document.querySelectorAll('.expandable-text').forEach(el => {
+        el.addEventListener('click', (e) => {
+            e.stopPropagation();
+            modalContent.innerHTML = el.innerHTML;
+            
+            // Clean up visual artifact from the modal copy if needed
+            const removeIcon = modalContent.querySelector('.icon');
+            if(removeIcon && !el.classList.contains('card')) removeIcon.remove();
+            
+            modalOverlay.classList.add('active');
+        });
+    });
+}
