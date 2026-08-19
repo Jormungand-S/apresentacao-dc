@@ -13,7 +13,7 @@ function generateSlides() {
         // Common Header
         contentHTML += `
             <div class="header">
-                <div class="logo">DC</div>
+                <img src="logo-dark.png" class="logo" alt="DC Gestão">
                 <div class="header-text">
                     <h3>DC Gestão & Performance</h3>
                     <p>${slide.headerBadge || 'ESTRATÉGIA • AQUISIÇÃO • CONVERSÃO'}</p>

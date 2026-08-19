@@ -183,15 +183,8 @@ body::after {
 .logo {
     width: 64px;
     height: 64px;
-    background: rgba(72, 230, 164, 0.1);
-    border: 1px solid var(--border-glass);
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 800;
-    font-size: 24px;
-    color: var(--accent-neon);
+    object-fit: contain;
+    border-radius: 8px;
     box-shadow: 0 0 20px rgba(72, 230, 164, 0.1);
 }
 .header-text h3 {
